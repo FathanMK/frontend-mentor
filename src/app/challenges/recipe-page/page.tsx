@@ -1,4 +1,5 @@
 import { cn } from "@/utils/cn";
+import { Metadata } from "next";
 import { Young_Serif, Outfit } from "next/font/google";
 
 import Image from "next/image";
@@ -12,6 +13,11 @@ const outfit = Outfit({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+  title: "Frontend Mentor - Recipe Page Challenge",
+  description: "My Recipe Page solution",
+};
 
 export default function ChallengesRecipePage() {
   return (
